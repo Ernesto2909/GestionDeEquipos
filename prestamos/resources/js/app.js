@@ -1,0 +1,6 @@
+require('./bootstrap');
+
+//modo nohce
+
+
+
