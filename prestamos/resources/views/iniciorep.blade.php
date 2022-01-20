@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 8 - How to Get Data Between Two Dates</title>
+    <title>Filtrar datos por rango de fechas</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -15,19 +15,19 @@
             <div class="col-md-8 offset-2">
                 <div class="card">
                     <div class="card-header">
-                        <h5>How to Get Data Between Two Dates in Laravel 8 - <span class="text-primary">MyWebTuts.com</span></h5>
+                        <h5>Filtrar datos por rango de fechas - <span class="text-primary">Prestamos Unicaes</span></h5>
                     </div>
                     <div class="card-body">
                         <form action="{{ route('daily.report') }}" method="get">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="">Start Date</label>
+                                    <label for="">Fecha de inicio</label>
                                     <input type="date" class="form-control" name="start_date">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="">End Date</label>
+                                    <label for="">Fecha final</label>
                                     <input type="date" class="form-control" name="end_date">
                                 </div>
                             </div>

@@ -29,7 +29,7 @@
       <a class="btn btn-primary" href="{{ route('prestamointernos.index') }}"> Back</a>
   </div>
 
-    <h1>Consulta maestro detalle!</h1> 
+    <h1>Busqueda a detalle</h1> 
     @yield('content')
    <!-- <div class="my-2">
       <form action="{{route('estadisticas.index')}}" method="GET">
