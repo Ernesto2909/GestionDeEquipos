@@ -64,5 +64,5 @@ Route::get('estadisticas/index', [App\Http\Controllers\EstadisticaController::cl
 //Route::get('/', [App\Http\Controllers\TestController::class, 'index']);
 Route::get('/filter', [App\Http\Controllers\TestController::class, 'daily_report'])->name('filter');
     
-Route::get('/', [App\Http\Controllers\ReportController::class, 'index'])->name('home');
+Route::get('/iniciorep', [App\Http\Controllers\ReportController::class, 'index'])->name('home');
 Route::get('daily-report', [App\Http\Controllers\ReportController::class, 'dailyReport'])->name('daily.report');

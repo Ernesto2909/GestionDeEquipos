@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use App\Models\Prestamointerno;
 use App\Models\Interno;
 use App\Models\Equipo;
+use App\Models\Decanato;
 use Rappasoft\LaravelLivewireTables\DataTableComponent;
 use Rappasoft\LaravelLivewireTables\Views\Column;
 use Rappasoft\LaravelLivewireTables\Views\Filter;
@@ -30,6 +31,8 @@ class StatComponent extends DataTableComponent
             Column::make('Equipo', 'equipo.nombre_equipo')
                 ->sortable()
                 ->searchable(),
+
+           
 
                 Column::make('Fecha', 'fecha')
                 ->sortable()

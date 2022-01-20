@@ -40,21 +40,7 @@
           </div>
       </form>
   </div> -->
- <form action="{{route('estadisticas.index')}}" method="GET" >
-    <div class="form-group-row" >
-      <label for="date" class="col-form-label col-sm-2">desde</label>
-      <div class="col-sm-3">
-          <input type="date" class="form-control input-sm" id="fromdate" name="date" required>
-      </div>
-  </div>
-  <div class="form-group-row" >
-    <label for="date" class="col-form-label col-sm-2">hasta</label>
-    <div class="col-sm-3">
-        <input type="date" class="form-control input-sm" id="todate" name="todate" required>
-    </div>
-</div>
-<button type="submit" class="btn" name="search" title="Search"><img src="https://img.icons8.com/android/24/000000/search.png"/></button>
-  </form> 
+ 
 
  
   

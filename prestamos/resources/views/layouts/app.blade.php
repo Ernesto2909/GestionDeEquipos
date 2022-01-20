@@ -49,6 +49,7 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('internos.index') }}">{{ __('Alumnos internos') }}</a>
                                 </li>
+                               
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('prestamointernos.index') }}">{{ __('prestamo interno') }}</a>
                                 </li>
@@ -64,6 +65,10 @@
                                        
                                         <li class="nav-item">
                                             <a class="nav-link" href="{{ route('estadisticas.index') }}">{{ __('Estadisticas externas') }}</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('daily.report') }}">{{ __('Filtrado por fechas') }}</a>
                                         </li>
                                     </ul>
                                 </li>

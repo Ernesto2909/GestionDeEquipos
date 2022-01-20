@@ -18,8 +18,14 @@
                     <div class="card-header">
                         <div class="row">
                            <div class="col-md-12">
-                                <h5>How to Get Data Between Two Dates in Laravel 8 - <span class="text-primary">MyWebTuts.com</span> <a href="{{ route('home')}}" class="btn btn-sm btn-secondary float-right"><i class="fa fa-plus"></i></a></h5>
+                                <h5>Consulta para estadisticas - <span class="text-primary">Presiona el boton para realizar un filtrado</span> <a href="{{ route('home')}}" class="btn btn-sm btn-secondary float-right"><i class="fa fa-search-plus"></i></a></h5>
                            </div> 
+                           <div class="col-md-12">
+                            <h5><span class="text-primary">Regresar al listado de alumnos</span> <a href="{{ route('internos.index')}}" class="btn btn-sm btn-secondary float-right"><i class="fa fa-users"></i></a></h5>
+                       </div> 
+
+                           
+                           
                         </div>
                     </div>
                     <div class="card-body">
@@ -28,8 +34,8 @@
                                 <tr>
                                     <th>#</th>
                                     <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Created At</th>
+                                    <th>Equipo</th>
+                                    <th>Fecha</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -37,8 +43,8 @@
                                     @foreach ($users as $key => $user)
                                         <tr>
                                             <td>{{ ++$key }}</td>
-                                            <td>{{ $user->name }}</td>
-                                            <td>{{ $user->email }}</td>
+                                            <td>{{ $user->interno->nombres }}</td>
+                                            <td>{{ $user->equipo->nombre_equipo }}</td>
                                             <td><span class="badge badge-success">{{ $user->created_at }}</span></td>
                                         </tr>
                                     @endforeach
